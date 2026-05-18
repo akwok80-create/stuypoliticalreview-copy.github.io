@@ -40,6 +40,16 @@ nav a.header-links:hover {
   text-decoration-color: white;
 }
 
+@media (max-width: 768px) {
+  #header-links {
+    display: none;
+    flex-direction: column;
+  }
+  #header-links.active {
+    display: flex;
+  }
+}
+
 .site-header {
   position: sticky;
   top: 0;
