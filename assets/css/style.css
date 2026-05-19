@@ -40,13 +40,21 @@ nav a.header-links:hover {
   text-decoration-color: white;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   #header-links {
     display: none;
     flex-direction: column;
+    width: 100%;
   }
   #header-links.active {
     display: flex;
+  }
+  .menu-toggle {
+    display: block;
   }
 }
 
