@@ -42,6 +42,7 @@ nav a.header-links:hover {
 
 .menu-toggle {
   display: none;
+  z-index: 101;
 }
 
 @media (max-width: 768px) {
@@ -58,7 +59,7 @@ nav a.header-links:hover {
     display: flex;
   }
   .menu-toggle {
-    position: relative;
+    display: block;
     z-index: 101;
   }
 }
