@@ -47,14 +47,19 @@ nav a.header-links:hover {
 @media (max-width: 768px) {
   #header-links {
     display: none;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    flex-direction: column;
+    z-index: 100;
   }
   #header-links.active {
     display: flex;
   }
   .menu-toggle {
-    display: block;
+    position: relative;
+    z-index: 101;
   }
 }
 
